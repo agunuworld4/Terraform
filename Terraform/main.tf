@@ -2,12 +2,12 @@ provider "azurerm" {
 }
 
 variable "prefix" {
-  default = "ITinfraTutoria143"
+  default = "agunuworldnetwork"
 }
 
 resource "azurerm_resource_group" "main" {
   name     = "${var.prefix}-resources"
-  location = "West US 2"
+  location = "east US 2"
 }
 
 resource "azurerm_virtual_network" "main" {
